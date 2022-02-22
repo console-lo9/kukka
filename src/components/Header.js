@@ -6,7 +6,7 @@ export default function Header({ $app, initialState }) {
   $app.appendChild(this.$target);
   this.state = initialState;
 
-  this.$js.src = "./public/scripts/header.js";
+  this.$js.src = "./script/header.js";
   this.$js.type = "text/javascript";
   document.getElementsByTagName("head")[0].appendChild(this.$js);
 
@@ -25,6 +25,11 @@ export default function Header({ $app, initialState }) {
                 class="logo--desktop"
                 src="./src/assets/desktop__logo.png"
                 alt="desktop__logo"
+              />
+              <img
+                class="logo--mobile"
+                src="./src/assets/mobile__logo.png"
+                alt="mobile__logo"
               />
             </a>
           </h1>
