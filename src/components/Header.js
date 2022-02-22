@@ -26,6 +26,11 @@ export default function Header({ $app, initialState }) {
                 src="./src/assets/desktop__logo.png"
                 alt="desktop__logo"
               />
+              <img
+                class="logo--mobile"
+                src="./src/assets/mobile__logo.png"
+                alt="mobile__logo"
+              />
             </a>
           </h1>
           <div class="header__navbar">
@@ -35,19 +40,19 @@ export default function Header({ $app, initialState }) {
             </ul>
           </div>
           <div class="header__navicon">
-            <a class="navicon--link">
+            <a  href="#" class="navicon--link icon--profile">
               <img
                 class="navicon"
                 src="./src/assets/profile.png"
                 alt="profile"
               />
             </a>
-            <a class="navicon--link">
+            <a  href="#" class="navicon--link icon--cart">
               <img class="navicon" src="./src/assets/cart.png" alt="cart" />
             </a>
           </div>
         </div>
-             `;
+    `;
   };
   render();
 }
