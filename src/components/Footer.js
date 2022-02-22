@@ -20,19 +20,19 @@ export default function Test({ $app, initialState }) {
                 href="https://ko-kr.facebook.com/kukka.kr/"
                 target="_blank"
                 class="sns facebook link"
-                ><span></span></a
+                ><span>Facebook</span></a
               >
               <a
                 href="https://www.instagram.com/kukkakorea/"
                 target="_blank"
                 class="sns instagram link"
-                ><span></span></a
+                ><span>Instagram</span></a
               >
               <a
                 href="https://www.youtube.com/channel/UC_zQakXCUPvjcfsU067zyCQ?view_as=subscriber"
                 target="_blank"
                 class="sns youtube link"
-                ><span></span></a
+                ><span>Youtube</span></a
               >
             </nav>
             <dl class="section-info__contact">
