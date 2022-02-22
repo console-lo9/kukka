@@ -47,8 +47,22 @@ button {
 }
 
 address {
+  margin-bottom: 0 !important;
   font-style: normal;
+  line-height: inherit;
 }
+
+dd {
+  margin-bottom: 0 !important;
+  padding-top: 0 !important;
+}
+dl {
+  margin: 0 !important;
+  padding: 0;
+  letter-spacing: -0.5px;
+  outline-width: 1px !important;
+}
+
 /* Default CSS */
 body {
   font-family: "Noto Sans KR", sans-serif;

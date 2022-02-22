@@ -7,7 +7,7 @@
 @import "./flower.scss";
 @import "./footer.scss";
 @import "./header.scss";
-
+@import "./popup.scss";
 body {
   background-color: azure;
 }
@@ -21,5 +21,11 @@ body {
 }
 .section__container {
   width: 100%;
-  margin-top: 150px;
+  margin-top: 100px;
+}
+
+@media screen and (max-width: 1023px) {
+  .section__container {
+    margin-top: 52px;
+  }
 }
