@@ -14,23 +14,26 @@ const price1 = document.getElementById("price-1");
 const price2 = document.getElementById("price-2");
 const price3 = document.getElementById("price-3");
 
+const showRoomList2 = document.getElementById("showRoomList-2");
+const showRoomList3 = document.getElementById("showRoomList-3");
+
 const slideData = [
   {
-    img: "../../src/assets/flower_event_1.jpeg",
+    img: "/src/assets/flower_event_1.jpeg",
     title: "롱엔로우 센터피스 (2/3~3/1)",
     price: "89,000원",
     description: "1월 플라워 클래스",
     tag: ["광화문점", "잠실점", "월계점", "구로점"],
   },
   {
-    img: "../../src/assets/flower_event_2.jpg",
+    img: "/src/assets/flower_event_2.jpg",
     title: "오아시스 리스(2/21~2/27)",
     price: "79,000원",
     description: "1월 플라워 클래스",
     tag: ["광화문점", "잠실점", "월계점", "구로점", "송파점", "부산동례점"],
   },
   {
-    img: "../../src/assets/flower_event_3.jpg",
+    img: "/src/assets/flower_event_3.jpg",
     title: "클래식 핸드타이드(2/28~3/6)",
     price: "79,000원",
     description: "1월 플라워 클래스",
@@ -44,6 +47,10 @@ btnNext.addEventListener("click", (event) => {
   index++;
   var data = slideData.map((_, i, data) => data[(i + index) % 3]);
   renderItem(data);
+
+  var showRoom = data.map((data) => data.tag);
+
+  renderShowRoom(showRoom);
 });
 
 btnPrev.addEventListener("click", (event) => {
@@ -53,6 +60,10 @@ btnPrev.addEventListener("click", (event) => {
   }
   var data = slideData.map((_, i, data) => data[(i + index) % 3]);
   renderItem(data);
+
+  var showRoom = data.map((data) => data.tag);
+
+  renderShowRoom(showRoom);
 });
 
 function renderItem(data) {
@@ -64,7 +75,21 @@ function renderItem(data) {
   text2.innerText = data[1].title;
   text3.innerText = data[2].title;
 
-  //   price1.innerText = data[0].description;
   price2.innerText = data[1].price;
   price3.innerText = data[2].price;
+}
+
+function renderShowRoom(showRoom) {
+  showRoomList2.innerHTML = "";
+  showRoomList3.innerHTML = "";
+  for (var i = 0; i < showRoom[1].length; i++) {
+    var showRoomItem = document.createElement("a");
+    showRoomItem.innerHTML = `${showRoom[1][i]}`;
+    showRoomList2.appendChild(showRoomItem);
+  }
+  for (var i = 0; i < showRoom[2].length; i++) {
+    var showRoomItem = document.createElement("a");
+    showRoomItem.innerHTML = `${showRoom[2][i]}`;
+    showRoomList3.appendChild(showRoomItem);
+  }
 }

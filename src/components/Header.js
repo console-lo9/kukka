@@ -26,6 +26,11 @@ export default function Header({ $app, initialState }) {
                 src="./src/assets/desktop__logo.png"
                 alt="desktop__logo"
               />
+              <img
+                class="logo--mobile"
+                src="./src/assets/mobile__logo.png"
+                alt="mobile__logo"
+              />
             </a>
           </h1>
           <div class="header__navbar">

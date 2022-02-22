@@ -4,9 +4,9 @@ $prev: url("../../assets/button_prev.png");
 .flower-container {
   display: flex;
   flex-direction: column;
-  max-width: 1240px;
+  width: 78vw;
   margin: 0 auto;
-  padding: 0 60px;
+  padding: 0 auto;
 }
 
 .flower-contents-head {
@@ -126,4 +126,13 @@ $prev: url("../../assets/button_prev.png");
   top: 30%;
   left: -100px;
   background: $prev;
+}
+
+.tag {
+  a {
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 0 10px;
+  }
 }
