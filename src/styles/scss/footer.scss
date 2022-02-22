@@ -2,12 +2,14 @@
   display: none;
 }
 
-a {
-  color: #fff !important;
-  text-decoration: none !important;
-
-  &:active {
+.footer {
+  a {
+    color: #fff !important;
     text-decoration: none !important;
+
+    &:active {
+      text-decoration: none !important;
+    }
   }
 }
 
