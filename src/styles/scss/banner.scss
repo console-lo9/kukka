@@ -7,8 +7,6 @@ $right-img: url("../../assets/banner_right.png");
   width: 100%;
 }
 .d-flex {
-  display: flex;
-  justify-content: center;
   width: 100%;
   //   background-color: gray;
 
@@ -31,7 +29,8 @@ $right-img: url("../../assets/banner_right.png");
         -moz-transform: scale(1.05); /* FireFox */
         -o-transform: scale(1.05); /* Opera */
         transform: scale(1.05);
-        transition: span transform 0.2s ease-out 0s;
+
+        transition: transform 0.3s ease-out 0s;
       }
     }
     .real_img {
@@ -116,13 +115,40 @@ $right-img: url("../../assets/banner_right.png");
     }
   }
 
+  .carousel-box {
+    width: 100vw;
+    background-color: #f7f7f7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .carousel-header {
+      display: flex;
+      justify-content: space-between;
+      padding: 40px 20px 0;
+      position: relative;
+      .tit {
+        font-size: 22px;
+      }
+      .more-link {
+        position: absolute;
+        right: 2vw;
+        top: 70%;
+        font-size: 12px;
+        line-height: 18px;
+        font-weight: 500;
+        letter-spacing: -0.18px;
+        color: #222;
+      }
+    }
+  }
   .carousel {
-    margin: 20px;
+    margin-bottom: 15px;
     position: relative;
 
+    padding: 20px 20px 50px;
     color: #222;
     .carousel-item {
-      width: 90vw;
+      width: 96vw;
       height: calc(90vw * 0.44);
       overflow: hidden;
     }
@@ -167,7 +193,7 @@ $right-img: url("../../assets/banner_right.png");
   }
 
   @media (max-width: 1024px) {
-    .carousel {
+    .carousel-box {
       display: block;
     }
     .banner__image {
@@ -175,8 +201,8 @@ $right-img: url("../../assets/banner_right.png");
     }
   }
 
-  @media (min-width: 1024px) and (max-width: 1440px) {
-    .carousel {
+  @media (min-width: 1024px) {
+    .carousel-box {
       display: none;
     }
     .banner__image {
