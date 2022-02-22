@@ -27,12 +27,12 @@ var index = 0;
 var btnNext = document.querySelector(".next");
 var btnPrev = document.querySelector(".prev");
 
-btnNext.addEventListener("click", (event) => {
+btnPrev.addEventListener("click", (event) => {
   index++;
   render();
 });
 
-btnPrev.addEventListener("click", (event) => {
+btnNext.addEventListener("click", (event) => {
   index--;
   if (index < 0) {
     index = 2;
