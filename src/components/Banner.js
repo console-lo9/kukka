@@ -18,6 +18,11 @@ export default function Banner({ $app, initialState }) {
   const render = () => {
     this.$target.innerHTML = `
       <div class="d-flex flex-row">
+      <div class="carousel-box">
+        <div class="carousel-header">
+        <h3 class="tit"><b>꾸까 브랜드 스토리</b></h3>
+        <a href="#" class="more-link">더보기</a>
+        </div>
       <div
         id="carouselExampleIndicators"
         class="carousel slide"
@@ -74,6 +79,7 @@ export default function Banner({ $app, initialState }) {
             <span> </span>
             </button>
           </div>
+      </div>
       </div>
       <div class="p-2 banner__image">
         <span class="banner__left_img mobile real_img"></span>

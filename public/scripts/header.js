@@ -33,6 +33,7 @@ var handleClick = (e) => {
   var currentY = window.scrollY;
   var endPointVideo = videoSection.offsetTop - headerRect.height;
   var endPointFC = flowerClassSection.offsetTop - headerRect.height;
+  console.log(endPointVideo);
   if (target.classList.contains("menu--video")) {
     if (currentY <= endPointVideo) {
       handleDownScroll(currentY, endPointVideo);
@@ -52,7 +53,6 @@ function handleWindowScroll() {
   var bodyRect = document.body.getBoundingClientRect();
   var bodyMaxWidth = bodyRect.width;
   var headerHeight = header.offsetHeight;
-  console.log(sectionContainer);
   if (bodyMaxWidth < 1024) {
     if (window.scrollY >= headerHeight) {
       header.classList.add("border");
