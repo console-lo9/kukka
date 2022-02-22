@@ -48,6 +48,14 @@ export default function Flower({ $app, initialState }) {
                         >오아시스 리스(2/21~2/27)</span
                       >
                       <span class="price" id="price-2">79,000원</span>
+                      <div class="tag" id="showRoomList-2">
+                        <a>광화문점</a>
+                        <a>잠실점</a>
+                        <a>월계점</a>
+                        <a>구로점</a>
+                        <a>송파점</a>
+                        <a>부산동례점</a>
+                      </div>
                     </div>
                   </div>
                   <div class="flower__item">
@@ -61,6 +69,13 @@ export default function Flower({ $app, initialState }) {
                         >클래식 핸드타이드(2/28~3/6)</span
                       >
                       <span class="price" id="price-3">79,000원</span>
+                      <div class="tag" id="showRoomList-3">
+                        <a>잠실점</a>
+                        <a>월계점</a>
+                        <a>구로점</a>
+                        <a>송파점</a>
+                        <a>부산동례점</a>
+                      </div>
                     </div>
                   </div>
                 </div>
