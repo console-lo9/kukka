@@ -21,7 +21,7 @@ export default function Popup({ $app, initialState }) {
     <div class="popup-inner">
       <div>
         <img
-          src="https://kukka-2-media-123.s3.amazonaws.com/media/class-name/ClassContentsProductImage/663/0_1.jpg"
+          src="src/assets/popup.png"
           alt="popup-img1"
         />
       </div>
