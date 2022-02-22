@@ -1,8 +1,15 @@
 .video__youtube {
-  width: calc(78vw);
-  height: calc(78vw * 0.56);
+  width: calc(60vw);
+  height: calc(60vw * 0.58);
 }
 
 .section__video {
   margin-bottom: 5rem;
+}
+
+@media (max-width: 1024px) {
+  .video__youtube {
+    width: calc(78vw);
+    height: calc(78vw * 0.56);
+  }
 }

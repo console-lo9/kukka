@@ -26,6 +26,7 @@ export default function Video({ $app, initialState }) {
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen
       ></iframe>
+  
              `;
   };
   render();
