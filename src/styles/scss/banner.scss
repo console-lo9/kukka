@@ -7,6 +7,8 @@ $right-img: url("../../assets/banner_right.png");
   width: 100%;
 }
 .d-flex {
+  display: flex;
+  justify-content: center;
   width: 100%;
   //   background-color: gray;
 
@@ -29,7 +31,6 @@ $right-img: url("../../assets/banner_right.png");
         -moz-transform: scale(1.05); /* FireFox */
         -o-transform: scale(1.05); /* Opera */
         transform: scale(1.05);
-
         transition: span transform 0.2s ease-out 0s;
       }
     }
@@ -109,7 +110,6 @@ $right-img: url("../../assets/banner_right.png");
         border: 1px solid #222;
         border-radius: 18px;
 
-        // font-size: 14px;
         text-align: center;
         color: #222;
       }
@@ -119,6 +119,13 @@ $right-img: url("../../assets/banner_right.png");
   .carousel {
     margin: 20px;
     position: relative;
+
+    color: #222;
+    .carousel-item {
+      width: 90vw;
+      height: calc(90vw * 0.44);
+      overflow: hidden;
+    }
     .banner__name {
       position: absolute;
       top: 26%;
@@ -151,7 +158,6 @@ $right-img: url("../../assets/banner_right.png");
       line-height: 20px;
       font-weight: 300;
       letter-spacing: -0.18px;
-      color: #222;
       p {
         margin: 0;
         padding: 0;
@@ -177,6 +183,11 @@ $right-img: url("../../assets/banner_right.png");
       display: block;
     }
   }
+
+  .carousel-indicators {
+    display: none;
+  }
+
   .banner__button {
     display: flex;
     justify-content: center;
@@ -185,10 +196,14 @@ $right-img: url("../../assets/banner_right.png");
     .owl-dot span {
       width: 8px;
       height: 8px;
-      background: #f5ca5f;
+      background: #f4cb5e;
       border-radius: 50%;
       display: block;
       margin: 5px;
+      pointer-events: none;
+    }
+    #carousel-button-right span {
+      background: #e4e4e4;
     }
   }
 }

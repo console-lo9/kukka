@@ -1,0 +1,50 @@
+.popup {
+  position: fixed;
+  right: 100px;
+  bottom: 270px;
+  display: none;
+  width: 300px;
+  height: 300px;
+  background-color: black;
+}
+
+.popup-inner {
+  width: 100%;
+
+  img {
+    width: auto;
+    height: 350px;
+  }
+}
+
+.popup-close {
+  width: 100%;
+  background-color: rgb(61, 61, 61);
+
+  input {
+    width: 20px;
+    height: 20px;
+    outline: 1px solid grey;
+    margin: 8px;
+  }
+
+  :nth-child(2) {
+    position: relative;
+    bottom: 3px;
+    display: inline-block;
+    color: #fff;
+  }
+
+  :nth-child(3) {
+    float: right;
+    background-image: url("../../assets/x-button.png");
+    background-repeat: no-repeat;
+    background-size: 15px;
+    color: #fff;
+    padding: 12px;
+    margin-top: 10px;
+    &::after {
+      content: "";
+    }
+  }
+}
