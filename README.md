@@ -1,6 +1,6 @@
 <h1 align="center"> 꾸까 클론 과제 </h1>
 
-<h3 align="center"> 서비스 링크: </h3>
+<h3 align="center"> 서비스 링크: https://console-lo9-kukka.netlify.app/ </h3>
 
 <p align="center"><img width="500" src="https://bit.ly/3HbbMA8" /></p>
 
@@ -9,7 +9,7 @@
 ## 👏 프로젝트 소개
 
 > 리액트없이 바닐라 자바스크립트로 꾸까(https://kukka.kr/) 웹 페이지를 구현하는 과제로 <br/>
-> IE8 크로스 브라우징을 대응하여 제작한 프로젝트입니다.
+> 크로스 브라우징에 대한 고민을 바탕으로 제작한 프로젝트입니다.
 
 <br/>
 
@@ -17,15 +17,14 @@
 
 |                                           프로필                                           |                    이름                     | 담당 기능     |
 | :----------------------------------------------------------------------------------------: | :-----------------------------------------: | :------------ |
-| <img src="https://avatars.githubusercontent.com/Ubermensch0608" width="100" height="100"/> | [우종원](https://github.com/Ubermensch0608) | 푸터          |
-|  <img src="https://avatars.githubusercontent.com/crucial-sub" width="100" height="100"/>   |  [박중섭](https://github.com/crucial-sub)   | GNB           |
+| <img src="https://avatars.githubusercontent.com/Ubermensch0608" width="100" height="100"/> | [우종원](https://github.com/Ubermensch0608) | 푸터, 팝업   |
+|  <img src="https://avatars.githubusercontent.com/crucial-sub" width="100" height="100"/>   |  [박중섭](https://github.com/crucial-sub)   | GNB          |
 |    <img src="https://avatars.githubusercontent.com/ttaerrim" width="100" height="100"/>    |    [이태림](https://github.com/ttaerrim)    | 동영상, 배너  |
 |   <img src="https://avatars.githubusercontent.com/penguin311" width="100" height="100"/>   |   [임수영](https://github.com/penguin311)   | 플라워 클래스 |
 
 <br/>
 
 ## 🚀 스택
-
 
 <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black"> <img src="https://img.shields.io/badge/Jquery-0769AD?style=flat-square&logo=jquery&logoColor=white"> 
 <img src="https://img.shields.io/badge/Webpack-8DD6F9?style=flat-square&logo=webpack&logoColor=white"> 
@@ -146,6 +145,7 @@ $ Live server
 ## 💡 과제 후기
 
 ### **우종원** 🍀
+리액트에 더 익숙해져 있는 이 시점에 많은 생각을 할 수 있었던 프로젝트였습니다. CRA세팅으로 모든 것이 한 번에 마법처럼 준비되던 것의 이면에는 사실 수 많은 것들이 들어 있었다는 것을 체감할 수 있었습니다. babel 그리고 webpack에 대해 관심을 갖고 공부할 수 있었으며, 크로스브라우징을 고려하는 개발이 쉽지 않지만, 다양한 사용자를 고려하는 것이 필수인 개발자에개는 언젠가는 닺닥드릴 운명같은 것이 아닐가 생각했습니다.    
 
 ### **박중섭** ✨
 
