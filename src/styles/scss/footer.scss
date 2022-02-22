@@ -107,14 +107,9 @@ nav.section-info__faq::after {
   background: #444;
 }
 .section-info__etc {
+  float: right;
   display: block;
-  zoom: -1;
-
-  @media (min-width: 1024px) {
-    position: absolute;
-    bottom: 82px;
-    right: 0;
-  }
+  line-height: 100px;
 }
 
 .section-info__about {
@@ -168,5 +163,43 @@ nav.section-info__faq::after {
     content: "";
     display: block;
     clear: both;
+  }
+}
+
+.sns {
+  &::before {
+    content: "";
+    display: inline-block;
+    margin: 0;
+  }
+
+  &.facebook {
+    &::before {
+      background-image: url("../../assets/kukka.png");
+      background-position: -42px -775px;
+      width: 32px;
+      height: 32px;
+      background-size: 1252px 845px;
+    }
+  }
+
+  &.instagram {
+    &::before {
+      background-image: url("../../assets/kukka.png");
+      background-position: -1214px -438px;
+      width: 32px;
+      height: 32px;
+      background-size: 1252px 845px;
+    }
+  }
+
+  &.youtube {
+    &::before {
+      background-image: url("../../assets/kukka.png");
+      background-position: -1164px -685px;
+      width: 32px;
+      height: 32px;
+      background-size: 1252px 845px;
+    }
   }
 }
