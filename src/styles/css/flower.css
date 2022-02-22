@@ -105,4 +105,10 @@
   top: 30%;
   left: -100px;
   background: url("../../assets/button_prev.png");
+}
+.tag a {
+  border: 1px solid #000;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 0 10px;
 } /*# sourceMappingURL=flower.css.map */
