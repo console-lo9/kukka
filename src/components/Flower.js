@@ -4,7 +4,7 @@ export default function Flower({ $app, initialState }) {
   $app.appendChild(this.$target);
 
   this.$js = document.createElement("script");
-  this.$js.src = "./public/scripts/flower.js";
+  this.$js.src = "./script/flower.js";
   this.$js.type = "text/javascript";
   document.getElementsByTagName("head")[0].appendChild(this.$js);
 

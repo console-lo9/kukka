@@ -6,7 +6,7 @@ export default function Banner({ $app, initialState }) {
   this.state = initialState;
 
   this.$js = document.createElement("script");
-  this.$js.src = "./public/scripts/banner.js";
+  this.$js.src = "./script/banner.js";
   this.$js.type = "text/javascript";
   document.getElementsByTagName("head")[0].appendChild(this.$js);
 

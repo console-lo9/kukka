@@ -6,7 +6,7 @@ export default function Header({ $app, initialState }) {
   $app.appendChild(this.$target);
   this.state = initialState;
 
-  this.$js.src = "./public/scripts/header.js";
+  this.$js.src = "./script/header.js";
   this.$js.type = "text/javascript";
   document.getElementsByTagName("head")[0].appendChild(this.$js);
 
