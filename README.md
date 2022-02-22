@@ -124,12 +124,11 @@ $ Live server
 
 ```
   "dependencies": {
-    "axios": "^0.25.0",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-scripts": "5.0.0",
-    "styled-components": "^5.3.3",
-    "web-vitals": "^2.1.4"
+    "babel-loader": "^8.2.3",
+    "node-sass": "^7.0.1",
+    "vanilla-framework": "^3.1.0",
+    "webpack": "^5.69.1",
+    "webpack-cli": "^4.9.2"
   },
 ```
 
