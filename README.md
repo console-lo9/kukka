@@ -1,4 +1,4 @@
-<h1 align="center"> 상품 등록 과제 </h1>
+<h1 align="center"> 꾸까 클론 과제 </h1>
 
 <h3 align="center"> 서비스 링크: </h3>
 
@@ -16,6 +16,10 @@
 ## 🚀 스택
 
 `JavaScript`
+
+## ⚠️ 규칙
+
+- class명은 [BEM 네이밍 규칙](https://padak-padak.tistory.com/entry/CSS-Naming-Conventions-%EB%84%A4%EC%9D%B4%EB%B0%8D-%EA%B7%9C%EC%B9%99)을 준수한다
 
 ## ✨ 구현 사항
 
@@ -47,13 +51,20 @@ GNB
 
 배너 영역
 
-- [ ] Bootstrap4 사용해 두 개의 다른 영역 레이아웃 구성
-- [ ] 단색 그라데이션
+- [x] Bootstrap4 사용해 두 개의 다른 영역 레이아웃 구성
+- [x] 이미지 위에 단색 그라데이션
+- [ ] hover 시 이미지 확대
+- [ ] 배너 내부 반응형
 
 푸터 영역
 
 - [ ] css로 레이아웃 구현 (IE8)
 - [ ] SNS 아이콘 클릭 시 링크 이동
+
+팝업
+
+- [ ] 들어가면 팝업 이미지를 띄움
+- [ ] 클릭하면 외부 사이트로 이동
 
 ## 🗺 구현 기능
 
@@ -69,10 +80,10 @@ GNB
 
 ```
 # clone the project
-$ git clone https://github.com/console-lo9/README-TEMPLATE.git
+$ git clone https://github.com/console-lo9/kukka.git
 
 # install modules
-$ cd README-TEMPLATE
+$ cd kukka
 $ npm ci || yarn
 
 # start
@@ -98,20 +109,6 @@ $ npm start || yarn start
 ```
 
 ## 📂 파일 구조
-
-     ├── public
-     └── src
-         ├── components
-         │   ├── BuyerRecommendImg
-         │   └── UploadImages
-         ├── layout
-         │   ├── Inputs
-         │   └── Section
-         ├── pages
-         ├── store
-         │   └── Contexts
-         └── utils
-             └── svg
 
 > 작성 후 삭제
 > 참고 (https://www.lesstif.com/lpt/linux-tree-54952142.html)
