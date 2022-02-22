@@ -1,14 +1,14 @@
-export default function Header({ $app, initialState }) {
+export default function Popup({ $app, initialState }) {
   this.$target = document.createElement("div");
-  this.$target.classList.add("popup");
+  this.$target.classList.add("newpopup");
   this.$js = document.createElement("script");
 
   $app.appendChild(this.$target);
   this.state = initialState;
 
-  this.$js.src = "./public/scripts/popup.js";
+  this.$js.src = "../../public/scripts/popup.js";
   this.$js.type = "text/javascript";
-  document.getElementsByTagName("popup")[0].appendChild(this.$js);
+  document.getElementsByTagName("head")[0].appendChild(this.$js);
 
   this.setState = (nextState) => {
     this.state = nextState;
@@ -16,7 +16,8 @@ export default function Header({ $app, initialState }) {
   };
 
   const render = () => {
-    this.$target.innerHTML = `<div class="popup">
+    this.$target.innerHTML = `
+    <div class="popup">
     <div class="popup-inner">
       <div>
         <img
@@ -25,14 +26,14 @@ export default function Header({ $app, initialState }) {
         />
       </div>
       <div class="popup-close">
-        <input class="close__check-box" type="checkbox" /><span
-          class="close__desc"
-          >오늘은 더 이상 보지 않기</span
-        >
-        <div id="close-popup-btn" class="close__btn">X</div>
+        <input class="close__check-box" type="checkbox" />
+        <span class="close__desc">오늘은 더 이상 보지 않기</span>
+        <div id="close-popup-btn" class="close__btn">
+        </div>
       </div>
     </div>
-  </div>`;
+  </div>
+    `;
   };
   render();
 }

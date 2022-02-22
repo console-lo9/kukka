@@ -12,9 +12,7 @@ $(document).ready(function () {
   getCookie();
 });
 
-$("#close-popup-btn").click(getCookie);
-
-function set() {
+$("#close-popup-btn").click(function () {
   var isNoMoreToday = $(".close__check-box")[0].checked;
   function setCookieToday(name, value, expireDays) {
     var todayDate = new Date();
@@ -35,4 +33,4 @@ function set() {
   } else {
     $(".popup").hide();
   }
-}
+});
