@@ -78,12 +78,6 @@ dl.section-info__contact::after {
   clear: both;
 }
 
-nav.section-info__faq::after {
-  content: "";
-  display: block;
-  clear: both;
-}
-
 .contact-tel {
   float: left;
   display: block;
@@ -98,17 +92,6 @@ nav.section-info__faq::after {
 .footer-wrap {
   margin-top: 52px;
   background: #222;
-}
-
-.faq__center {
-  padding: 5px 10px;
-  border: 1px solid#9b9b9b;
-  border-radius: 15px;
-  cursor: pointer;
-  font-size: 13px;
-  line-height: 36px;
-  font-weight: 300;
-  letter-spacing: -0.2px;
 }
 
 .sns {
@@ -191,12 +174,20 @@ address {
 
 .section-info__faq {
   margin-top: 15px;
-  display: block;
-
+  float: right;
   @media (min-width: 1024px) {
     margin-top: 12px;
     margin-left: 17px;
     float: left;
+    position: relative;
+    bottom: 100px;
+    right: 280px;
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    clear: both;
   }
 
   > a {
@@ -210,19 +201,19 @@ address {
     height: 36px;
     padding: 0 20px;
     color: #fff;
-  }
 
-  @media (min-width: 1024px) {
-    padding: 0 20px;
-    border: 1px solid #9b9b9b;
-    -webkit-border-radius: 18px;
-    -moz-border-radius: 18px;
-    border-radius: 18px;
-    cursor: pointer;
-    font-size: 13px;
-    line-height: 36px;
-    font-weight: 300;
-    letter-spacing: -0.2px;
+    @media (min-width: 1024px) {
+      padding: 0 20px;
+      border: 1px solid #9b9b9b;
+      -webkit-border-radius: 18px;
+      -moz-border-radius: 18px;
+      border-radius: 18px;
+      cursor: pointer;
+      font-size: 13px;
+      line-height: 36px;
+      font-weight: 300;
+      letter-spacing: -0.2px;
+    }
   }
 }
 
@@ -233,7 +224,7 @@ address {
 
   @media (min-width: 1024px) {
     position: absolute;
-    bottom: 250px;
+    bottom: 165px;
     right: 0;
     background-image: url("../../assets/kukka.png");
     background-position: 0 -612px;
