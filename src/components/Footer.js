@@ -20,19 +20,19 @@ export default function Test({ $app, initialState }) {
                 href="https://ko-kr.facebook.com/kukka.kr/"
                 target="_blank"
                 class="sns facebook link"
-                ><span>Facebook</span></a
+                ><span></span></a
               >
               <a
                 href="https://www.instagram.com/kukkakorea/"
                 target="_blank"
                 class="sns instagram link"
-                ><span>Instagram</span></a
+                ><span></span></a
               >
               <a
                 href="https://www.youtube.com/channel/UC_zQakXCUPvjcfsU067zyCQ?view_as=subscriber"
                 target="_blank"
                 class="sns youtube link"
-                ><span>Youtube</span></a
+                ><span></span></a
               >
             </nav>
             <dl class="section-info__contact">
@@ -57,7 +57,7 @@ export default function Test({ $app, initialState }) {
                 >꾸까 고객센터 ></a
               >
             </nav>
-            <hr />
+            <hr  class='useless'/>
             <dl class="section-info__about">
               <dt class="logo"><span class="blind">꾸까</span></dt>
               <dd>상호명 : 꾸까(kukka)</dd>
