@@ -5,6 +5,11 @@ export default function Banner({ $app, initialState }) {
   $app.appendChild(this.$target);
   this.state = initialState;
 
+  this.$js = document.createElement("script");
+  this.$js.src = "./public/scripts/banner.js";
+  this.$js.type = "text/javascript";
+  document.getElementsByTagName("head")[0].appendChild(this.$js);
+
   this.setState = (nextState) => {
     this.state = nextState;
     this.render();
@@ -17,20 +22,24 @@ export default function Banner({ $app, initialState }) {
         id="carouselExampleIndicators"
         class="carousel slide"
         data-ride="carousel"
+        data-bs-touch="false"
+        data-bs-interval="false"
       >
         <ol class="carousel-indicators">
           <li
             data-target="#carouselExampleIndicators"
             data-slide-to="0"
             class="active"
+            id="carousel-button0"
           ></li>
           <li
             data-target="#carouselExampleIndicators"
             data-slide-to="1"
+            id="carousel-button1"
           ></li>
         </ol>
         <div class="carousel-inner">
-          <div class="carousel-item active">
+          <div class="carousel-item left-item active">
             <img
               class="d-block w-100"
               src="src/assets/carousel_left.png"
@@ -42,7 +51,7 @@ export default function Banner({ $app, initialState }) {
               <p>kukka의 문화를 소개해요.</p>
             </div>
           </div>
-          <div class="carousel-item">
+          <div class="carousel-item right-item">
             <img
               class="d-block w-100"
               src="src/assets/carousel_right.png"
@@ -57,7 +66,14 @@ export default function Banner({ $app, initialState }) {
             </div>
           </div>
         </div>
-        
+        <div class="banner__button">
+            <button role="button" class="owl-dot" id="carousel-button-left">
+            <span> </span>
+            </button>
+            <button role="button" class="owl-dot" id="carousel-button-right">
+            <span> </span>
+            </button>
+          </div>
       </div>
       <div class="p-2 banner__image">
         <span class="banner__left_img mobile real_img"></span>

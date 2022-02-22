@@ -183,6 +183,11 @@ $right-img: url("../../assets/banner_right.png");
       display: block;
     }
   }
+
+  .carousel-indicators {
+    display: none;
+  }
+
   .banner__button {
     display: flex;
     justify-content: center;
@@ -191,10 +196,14 @@ $right-img: url("../../assets/banner_right.png");
     .owl-dot span {
       width: 8px;
       height: 8px;
-      background: #f5ca5f;
+      background: #f4cb5e;
       border-radius: 50%;
       display: block;
       margin: 5px;
+      pointer-events: none;
+    }
+    #carousel-button-right span {
+      background: #e4e4e4;
     }
   }
 }
