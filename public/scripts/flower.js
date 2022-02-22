@@ -27,12 +27,12 @@ var index = 0;
 var btnNext = document.querySelector(".next");
 var btnPrev = document.querySelector(".prev");
 
-btnNext.addEventListener("click", (event) => {
+btnPrev.addEventListener("click", (event) => {
   index++;
   render();
 });
 
-btnPrev.addEventListener("click", (event) => {
+btnNext.addEventListener("click", (event) => {
   index--;
   if (index < 0) {
     index = 2;
@@ -113,7 +113,7 @@ function renderShowRoom(showRoom) {
   }
   for (var i = 0; i < showRoom[2].length; i++) {
     var showRoomItem = document.createElement("a");
-    switch (showRoom[1][i]) {
+    switch (showRoom[2][i]) {
       case "광화문점":
         showRoomItem.setAttribute("class", "gwang");
         break;

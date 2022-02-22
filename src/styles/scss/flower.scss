@@ -69,7 +69,7 @@ $prev: url("../../assets/button_prev.png");
     }
   }
 
-  @media (max-width: 1000px) {
+  @media (max-width: 1024px) {
     .flower-container {
       overflow: hidden;
     }
@@ -136,7 +136,7 @@ $prev: url("../../assets/button_prev.png");
 
     .flower__item + .flower__item {
       margin-top: 5%;
-      padding-top: 5%;
+      padding-top: 3%;
       border-top: #d3d3d3 1px solid;
     }
     .flower__item {
@@ -167,7 +167,7 @@ $prev: url("../../assets/button_prev.png");
       .summary {
         display: flex;
         flex-direction: column;
-        padding: 0 0 0 20px;
+        padding: 3px 0 0 20px;
         overflow: hidden;
         display: block;
 
