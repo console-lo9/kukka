@@ -1,0 +1,129 @@
+$next: url("../../assets/button_next.png");
+$prev: url("../../assets/button_prev.png");
+
+.flower-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 60px;
+}
+
+.flower-contents-head {
+  b {
+    font-weight: 700;
+  }
+}
+.flower__change {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+.flower-products {
+  position: relative;
+  padding: 40px 0 120px;
+  zoom: -1;
+
+  .event-class {
+    float: left;
+    width: 50%;
+    padding-right: 2%;
+    position: relative;
+
+    a {
+      position: relative;
+      display: block;
+    }
+
+    .flower__text {
+      position: absolute;
+      bottom: 7%;
+      left: 5%;
+      display: flex;
+      flex-direction: column;
+      letter-spacing: -0.27px;
+      color: #222;
+      font: {
+        size: 18px;
+        weight: 300;
+      }
+      #text-1 {
+        font: {
+          size: 25px;
+          weight: 700;
+        }
+        letter-spacing: -0.33px;
+      }
+    }
+  }
+}
+.special-class {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 50%;
+  float: right;
+
+  .flower__item + .flower__item {
+    margin-top: 5%;
+    padding-top: 5%;
+    border-top: #d3d3d3 1px solid;
+  }
+  .flower__item {
+    display: flex;
+    flex-direction: row;
+
+    .thumnail {
+      position: relative;
+      top: inherit;
+      left: inherit;
+      float: left;
+      width: 42%;
+    }
+
+    .summary {
+      display: flex;
+      flex-direction: column;
+      padding: 0 0 0 20px;
+      white-space: nowrap;
+
+      .name {
+        font: {
+          size: 16px;
+          weight: 500;
+        }
+        letter-spacing: -0.24px;
+        line-height: 24px;
+      }
+      .price {
+        margin-top: 5px;
+      }
+    }
+  }
+}
+
+.btn {
+  width: 60px;
+  height: 60px;
+
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+  background-size: contain !important;
+  &:hover,
+  &:focus {
+    border: none;
+    outline: none;
+  }
+}
+.next {
+  position: absolute;
+  top: 30%;
+  right: -100px;
+  background-image: $next;
+}
+.prev {
+  position: absolute;
+  top: 30%;
+  left: -100px;
+  background: $prev;
+}

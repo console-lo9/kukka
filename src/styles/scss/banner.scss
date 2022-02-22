@@ -1,0 +1,104 @@
+$banner-color: rgba(244, 241, 240, 1);
+$transparent: rgba(244, 241, 240, 0);
+$left-img: url("../../assets/banner_left.png");
+$right-img: url("../../assets/banner_right.png");
+
+.banner__container {
+  width: 100vw;
+}
+.bs-docs-section {
+  width: 100%;
+}
+.d-flex {
+  width: 100%;
+  //   background-color: gray;
+
+  .banner__image {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+
+    height: calc(100vw / 8.122);
+    width: 50%;
+
+    padding: 0 !important;
+    overflow: hidden;
+
+    &:hover {
+      cursor: pointer;
+      .real_img {
+        -webkit-transform: scale(1.05); /*  크롬 */
+        -moz-transform: scale(1.05); /* FireFox */
+        -o-transform: scale(1.05); /* Opera */
+        transform: scale(1.05);
+      }
+    }
+    .real_img {
+      height: inherit;
+      background-position: center center !important;
+      background-repeat: no-repeat !important;
+      background-size: cover !important;
+      object-fit: cover;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+
+      display: block;
+      transition: transform 0.2s ease-out 0s;
+    }
+    .banner__left_img {
+      background: linear-gradient(90deg, $banner-color 0%, $transparent 80%),
+        $left-img;
+    }
+    .banner__right_img {
+      background: linear-gradient(90deg, $transparent 20%, $banner-color 100%),
+        $right-img;
+    }
+    .banner__name {
+      width: 100%;
+      position: absolute;
+      top: 17%;
+      left: 0;
+      text-align: center;
+      font-size: 20px;
+      font-weight: 700;
+      letter-spacing: -0.33px;
+      color: #222;
+    }
+
+    .banner__desc {
+      width: 100%;
+      position: absolute;
+      top: 36%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      letter-spacing: -0.21px;
+      font-size: 12px;
+
+      p {
+        margin: 0;
+        padding: 0;
+        line-height: 1rem;
+        font-weight: 500;
+      }
+
+      .banner_button {
+        width: 180px;
+        height: 36px;
+        margin: 10px auto 0;
+        padding-top: 0.5rem;
+
+        border: 1px solid #222;
+        border-radius: 18px;
+
+        // font-size: 14px;
+        text-align: center;
+        color: #222;
+      }
+    }
+  }
+}

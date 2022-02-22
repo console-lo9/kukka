@@ -1,0 +1,25 @@
+@import "vanilla-framework";
+@include vanilla;
+
+@import "./reset.scss";
+@import "./video.scss";
+@import "./banner.scss";
+@import "./flower.scss";
+@import "./footer.scss";
+@import "./header.scss";
+
+body {
+  background-color: azure;
+}
+
+.app {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.section__container {
+  width: 100%;
+  margin-top: 150px;
+}
