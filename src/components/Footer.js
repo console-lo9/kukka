@@ -57,7 +57,7 @@ export default function Test({ $app, initialState }) {
                 >꾸까 고객센터 ></a
               >
             </nav>
-            <hr />
+            <hr  class='useless'/>
             <dl class="section-info__about">
               <dt class="logo"><span class="blind">꾸까</span></dt>
               <dd>상호명 : 꾸까(kukka)</dd>
