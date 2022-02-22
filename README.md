@@ -92,7 +92,7 @@ GNB
 ## 🗺 구현 Preivew
 
 
-   <img width="500" src="https://bit.ly/3HgR1mx" />
+   <img width="500" src="https://user-images.githubusercontent.com/28384562/155220275-654b912d-fc34-4e09-8312-9173fc1043d5.gif" />
 
 
 ## 🗒 프로젝트 진행 과정 및 구현 사항
