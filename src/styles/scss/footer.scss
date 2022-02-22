@@ -2,14 +2,17 @@
   display: none;
 }
 
-.footer {
-  a {
-    color: #fff !important;
-    text-decoration: none !important;
+a.link {
+  color: #fff;
+  text-decoration: none !important;
 
-    &:active {
-      text-decoration: none !important;
-    }
+  &:active {
+    text-decoration: none !important;
+  }
+
+  &:hover {
+    text-decoration-color: #fff !important;
+    text-decoration: none !important;
   }
 }
 
@@ -50,13 +53,19 @@
 }
 
 .footer-inner {
-  width: auto;
-  padding: 50px 0;
+  width: 100%;
+  padding: 10px 0;
   color: #f7f7f7;
   width: 250px;
   margin: 0 auto;
 
   @media (min-width: 1024px) {
+    position: relative;
+    width: 100%;
+    margin: 0;
+    padding: 30px 0 60px 0;
+  }
+  @media (min-width: 768px) and (max-width: 1023px) {
     position: relative;
     width: 100%;
     margin: 0;
@@ -84,7 +93,7 @@ dl.section-info__contact::after {
   float: left;
   display: block;
   font-size: 22px;
-  line-height: 33px;
+  line-height: 47px;
   font-weight: 500;
   letter-spacing: -0.33px;
   color: #f7f7f7;
@@ -154,9 +163,14 @@ address {
     display: block;
     margin-top: 0;
     font-size: 14px;
-    line-height: 33px;
+    line-height: 49px;
     font-weight: 300;
     letter-spacing: -0.21px;
+  }
+  @media (min-width: 768px) and (max-width: 1023px) {
+    float: none;
+    position: relative;
+    display: block;
   }
 }
 
@@ -166,24 +180,28 @@ address {
   line-height: 20px;
   color: #fff;
   font-weight: 100;
-
   @media (min-width: 1024px) {
     float: none;
     clear: both;
-    padding: 15px 0 !important;
   }
 }
 
 .section-info__faq {
+  float: none;
+  position: relative;
   margin-top: 15px;
-  float: right;
-  @media (min-width: 1024px) {
+
+  @media (min-width: 1300px) and (max-width: 1440px) {
+    float: right;
     margin-top: 12px;
     margin-left: 17px;
-    float: left;
-    position: relative;
-    bottom: 100px;
-    right: 280px;
+    bottom: 85px;
+    right: 360px;
+  }
+
+  @media (max-width: 1299px) {
+    float: none;
+    margin-top: 12px;
   }
 
   &::after {
@@ -216,6 +234,11 @@ address {
       font-weight: 300;
       letter-spacing: -0.2px;
     }
+    @media (min-width: 768px) and (max-width: 1023px) {
+      position: relative;
+      border-radius: 18px;
+      border: 1px solid #fff;
+    }
   }
 }
 
@@ -226,7 +249,7 @@ address {
 
   @media (min-width: 1024px) {
     position: absolute;
-    bottom: 165px;
+    bottom: 170px;
     right: 0;
     background-image: url("../../assets/kukka.png");
     background-position: 0 -612px;
@@ -237,6 +260,8 @@ address {
 }
 
 .section-info__about {
+  padding-top: 15px;
+
   > dd {
     position: relative;
     display: inline-block;
@@ -288,6 +313,9 @@ address {
       right: 0;
       height: 1px;
       background-color: #444;
+    }
+    @media (max-width: 1299px) {
+      top: 210px;
     }
   }
 }
