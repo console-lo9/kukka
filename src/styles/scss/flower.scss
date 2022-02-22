@@ -11,12 +11,13 @@ $prev: url("../../assets/button_prev.png");
 .flower-container {
   display: flex;
   flex-direction: column;
-  max-width: 1240px;
+  width: 78vw;
   margin: 0 auto;
-  padding: 0 60px;
+  padding: 0 auto;
 }
 
 .flower-contents-head {
+  letter-spacing: -0.33px;
   b {
     font-weight: 700;
   }
