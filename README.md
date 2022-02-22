@@ -2,7 +2,7 @@
 
 <h3 align="center"> 서비스 링크: </h3>
 
-<p align="center"><img width="500" src="https://bit.ly/3HyINHE" /></p>
+<p align="center"><img width="500" src="https://bit.ly/3HbbMA8" /></p>
 
 <br/>
 
@@ -53,19 +53,19 @@
 
 GNB
 
-- [ ] 스크롤 이동 시 상단 고정
-- [ ] 메뉴 hover 시 글자 하단에 밑줄
+- [x] 스크롤 이동 시 상단 고정
+- [x] 메뉴 hover 시 글자 하단에 밑줄
   - text-decoration 사용 금지
-- [ ] GNB 하단 영역에 그림자 효과 - (z-index)
-- [ ] 메뉴 아이템 두 가지: 동영상, 플라워클래스
-- [ ] 클릭 시 해당 영역으로 스크롤 이동
-- [ ] 애니메이션 효과 적용
+- [x] GNB 하단 영역에 그림자 효과 - (z-index)
+- [x] 메뉴 아이템 두 가지: 동영상, 플라워클래스
+- [x] 클릭 시 해당 영역으로 스크롤 이동
+- [x] 애니메이션 효과 적용
   - scroll-behavior: smooth 사용 금지
 
 동영상
 
-- [ ] iFrame 사용하여 Youtube 영역 구현
-- [ ] 캡션 삽입 & 동영상 제목 클릭 시 링크 이동
+- [x] iFrame 사용하여 Youtube 영역 구현
+- [x] 캡션 삽입 & 동영상 제목 클릭 시 링크 이동
 
 플라워클래스
 
@@ -76,28 +76,30 @@ GNB
 
 - [x] Bootstrap4 사용해 두 개의 다른 영역 레이아웃 구성
 - [x] 이미지 위에 단색 그라데이션
-- [ ] hover 시 이미지 확대
-- [ ] 배너 내부 반응형
+- [x] hover 시 이미지 확대
+- [x] 배너 내부 반응형
 
 푸터 영역
 
-- [ ] css로 레이아웃 구현 (IE8)
-- [ ] SNS 아이콘 클릭 시 링크 이동
+- [x] css로 레이아웃 구현 (IE8)
+- [x] SNS 아이콘 클릭 시 링크 이동
 
 팝업
 
-- [ ] 들어가면 팝업 이미지를 띄움
-- [ ] 클릭하면 외부 사이트로 이동
+- [x]들어가면 팝업 이미지를 띄움
+- [x] 클릭하면 외부 사이트로 이동
 
-## 🗺 구현 기능
+## 🗺 구현 Preivew
 
-1. 첫 번째 기능
 
-   <img width="500" src="https://bit.ly/3HyINHE" />
+   <img width="500" src="https://bit.ly/3HgR1mx" />
 
-2. 두 번째 기능
 
-   <img width="500" src="https://bit.ly/3HyINHE" />
+## 🗒 프로젝트 진행 과정 및 구현 사항
+
+> [위키 링크](https://github.com/console-lo9/kukka/wiki/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EC%A7%84%ED%96%89-%EA%B3%BC%EC%A0%95%EA%B3%BC-%EA%B3%A0%EB%AF%BC)
+
+<br/>
 
 ## ⚙ 설치
 
