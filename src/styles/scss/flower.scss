@@ -26,10 +26,12 @@ $prev: url("../../assets/button_prev.png");
   display: flex;
   flex-direction: row;
   position: relative;
+  justify-content: center;
 }
 .flower-products {
   position: relative;
-  padding: 40px 0 120px;
+
+  padding: 20px 0 120px;
   zoom: -1;
 
   @media (min-width: 1024px) {
@@ -56,6 +58,7 @@ $prev: url("../../assets/button_prev.png");
           size: 18px;
           weight: 300;
         }
+
         #text-1 {
           font: {
             size: 25px;
@@ -63,6 +66,62 @@ $prev: url("../../assets/button_prev.png");
           }
           letter-spacing: -0.33px;
         }
+      }
+    }
+  }
+
+  @media (max-width: 1000px) {
+    .flower-container {
+      overflow: hidden;
+    }
+    .event-class {
+      position: relative;
+    }
+    .flower__text {
+      display: block;
+      width: 30%;
+      .name {
+        position: absolute;
+        bottom: 9%;
+        left: 20px;
+        padding-right: 15px;
+        font-size: 16px;
+        font-weight: 700;
+        color: #222;
+      }
+    }
+    .desc {
+      position: absolute;
+      bottom: 18%;
+      left: 20px;
+      font-weight: 400;
+      font-size: 14px;
+      letter-spacing: -0.21px;
+      max-width: 90%;
+      color: #222;
+    }
+
+    img {
+      width: 90%;
+    }
+
+    .flower__item {
+      padding-top: 20px;
+      display: flex;
+      align-content: center;
+      .thumnail {
+        width: 20%;
+      }
+    }
+    .summary {
+      display: inline-block;
+      padding-left: 20px;
+      padding-top: 5px;
+      .name {
+        display: block;
+      }
+      span {
+        font-weight: 500;
       }
     }
   }

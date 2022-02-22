@@ -4,6 +4,15 @@
 
 <p align="center"><img width="500" src="https://bit.ly/3HyINHE" /></p>
 
+<br/>
+
+## 👏 프로젝트 소개
+
+> 리액트없이 바닐라 자바스크립트로 꾸까(https://kukka.kr/) 웹 페이지를 구현하는 과제로 <br/>
+> IE8 크로스 브라우징을 대응하여 제작한 프로젝트입니다.
+
+<br/>
+
 ## 🙋‍♀️🙋‍♂️ 팀원
 
 |                                           프로필                                           |                    이름                     | 담당 기능     |
@@ -13,20 +22,29 @@
 |    <img src="https://avatars.githubusercontent.com/ttaerrim" width="100" height="100"/>    |    [이태림](https://github.com/ttaerrim)    | 동영상, 배너  |
 |   <img src="https://avatars.githubusercontent.com/penguin311" width="100" height="100"/>   |   [임수영](https://github.com/penguin311)   | 플라워 클래스 |
 
+<br/>
+
 ## 🚀 스택
 
-`JavaScript`
+`JavaScript` `jQuery` `Webpack` `Babel` `Sass`
+
+<br/>
 
 ## ⚠️ 규칙
 
-- class명은 [BEM 네이밍 규칙](https://padak-padak.tistory.com/entry/CSS-Naming-Conventions-%EB%84%A4%EC%9D%B4%EB%B0%8D-%EA%B7%9C%EC%B9%99)을 준수한다
+- css class명은 [BEM 네이밍 규칙](https://padak-padak.tistory.com/entry/CSS-Naming-Conventions-%EB%84%A4%EC%9D%B4%EB%B0%8D-%EA%B7%9C%EC%B9%99)을 준수한다
+
+- Git Team Ground Rule - Git Flow, 모든 팀원이 체크 후 마지막 체크한 팀원이 머지한다. 
+
+<br/>
 
 ## ✨ 구현 사항
 
-사용 기술
+사용 기술 
 
-- [ ] Vanilla JS 사용
-- [ ] jQuery 사용 가능
+- [x] Vanilla JS 사용
+- [x] jQuery 사용 가능
+- [x] 반응형 
 
 GNB
 
@@ -46,8 +64,8 @@ GNB
 
 플라워클래스
 
-- [ ] 이미지 hover 시 줌 효과
-- [ ] 화살표 버튼 클릭 시 1, 2, 3 이미지 돌아가며 교체
+- [x] 이미지 hover 시 줌 효과
+- [x] 화살표 버튼 클릭 시 1, 2, 3 이미지 돌아가며 교체
 
 배너 영역
 
@@ -87,7 +105,7 @@ $ cd kukka
 $ npm ci || yarn
 
 # start
-$ npm start || yarn start
+$ Live server
 
 ⠀
 ⠀  You can now view this project in the browser.
@@ -128,3 +146,5 @@ $ npm start || yarn start
 ### **이태림** 🐯
 
 ### **임수영** 🐧
+프레임워크 없이 Vanilla JS로 컴포넌트를 나눠 작업하는 것을 경험해 볼 수있는 좋은 과제였던 것 같습니다. 
+또한 IE8 크로스 브라우징을 위해 JS에서 map 이 아닌 for 문을 사용하는 등의 코드 구현으로 크로스 브라우징 방법을 알게 되었습니다. 

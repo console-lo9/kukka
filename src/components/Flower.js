@@ -34,8 +34,8 @@ export default function Flower({ $app, initialState }) {
                       </div>
                     </span>
                     <div class="flower__text">
-                      <span>새로운 일상을 경험하는</span>
-                      <span id="text-1">1월 플라워 클래스</span>
+                      <span class="desc">새로운 일상을 경험하는</span>
+                      <span class="name" id="text-1">1월 플라워 클래스 자세히 보기 </span>
                       <span id="price-1"></span>
                     </div>
                   </a>
