@@ -113,7 +113,7 @@ function renderShowRoom(showRoom) {
   }
   for (var i = 0; i < showRoom[2].length; i++) {
     var showRoomItem = document.createElement("a");
-    switch (showRoom[1][i]) {
+    switch (showRoom[2][i]) {
       case "광화문점":
         showRoomItem.setAttribute("class", "gwang");
         break;
