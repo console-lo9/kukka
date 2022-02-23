@@ -1,9 +1,10 @@
 .popup {
   position: fixed;
-  left: 40%;
-  top: 30%;
+  right: 10%;
+  top: 15%;
   display: none;
   z-index: 100;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .popup-inner {
@@ -11,7 +12,7 @@
 
   img {
     width: auto;
-    height: 350px;
+    max-width: 350px;
   }
 }
 
