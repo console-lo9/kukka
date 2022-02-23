@@ -209,8 +209,10 @@ $prev: url("../../assets/button_prev.png");
   background-size: contain !important;
   &:hover,
   &:focus {
-    border: none;
+    border: #fff;
     outline: none;
+    background-color: #fff;
+    border-radius: 50;
   }
 }
 .next {
